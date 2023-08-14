@@ -125,3 +125,6 @@ def signout(request):
     logout(request)
     messages.success(request, "Logged Out Successfully!!")
     return redirect('home')
+
+def account(request):
+    return render(request, 'authentication/account.html')
